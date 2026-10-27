@@ -12,7 +12,7 @@ The project is divided into three independent databases. For each one, the proje
 
 ---
 
-## 🗄️ 1. Optician's Shop "Cul d'Ampolla" (`bottle_bottom_optics`)
+## 🗄️ 1. Optician's Shop (`bottle_bottom_optics`)
 **Goal:** Manage clients, suppliers, brands, glasses, and sales for an optician's shop.
 
 **Main features of the model:**
@@ -39,7 +39,7 @@ The project is divided into three independent databases. For each one, the proje
 
 ---
 
-## 📺 3. Video Platform - YouTube (`youtube_db`)
+## 📺 3. Video Platform - YouTube (`youtube`)
 **Goal:** Model a reduced version of a video hosting platform.
 
 **Main features of the model:**
@@ -54,24 +54,15 @@ The project is divided into three independent databases. For each one, the proje
 
 ## 🛠️ Technologies Used
 
-- **Database Engine:** MySQL 8.0+
+- **Database Engine:** MySQL (running in a Docker container)
 - **SQL Client:** MySQL Workbench
-- **Visual Modeling:** DBML (Database Markup Language) / dbdiagram.io
+- **Visual Modeling:** dbdiagram.io
 - **Version Control:** Git / GitHub
 
-## 🚀 How to run the scripts
+## 🚀 How to run the project
 
-1. Open **MySQL Workbench** (or your favorite SQL client).
-2. Create a new connection to your local server.
+1. Make sure your MySQL Docker container is running on your computer.
+2. Open **MySQL Workbench** and connect to the local MySQL server (the Docker container).
 3. Open the `.sql` file for the project you want to test (for example, `bottle_bottom_optics.sql`).
 4. Run the full script. *(Note: The scripts include `DROP DATABASE IF EXISTS` at the beginning, so they will reset the database from scratch).*
 5. Run the queries at the end of the script to see the results.
-
-## 👤 Author
-
-- **[Your Name and Surname]**
-- [Your email or GitHub profile]
-- Project for the subject [Subject Name] - [Course/Year]
-
----
-*This project was developed following database normalization best practices and entity-relationship modeling.*
